@@ -10,7 +10,7 @@ npm install boot-signal
 
 ## Usage
 
-``` js
+```js
 const boot-signal = require('boot-signal')
 ```
 
