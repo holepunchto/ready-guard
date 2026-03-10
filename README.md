@@ -3,7 +3,7 @@
 Like a composite ReadyResource
 
 ```
-npm install boot-signal
+npm install ready-guard
 ```
 
 `¯\\_(ツ)_/¯`
@@ -11,7 +11,7 @@ npm install boot-signal
 ## Usage
 
 ```js
-const boot-signal = require('boot-signal')
+const ReadyGuard = require('ready-guard')
 ```
 
 ## License
