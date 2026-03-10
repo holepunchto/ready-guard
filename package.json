@@ -1,6 +1,6 @@
 {
   "name": "ready-guard",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple signal to do composite resource lifecycles",
   "main": "index.js",
   "dependencies": {
