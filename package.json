@@ -1,0 +1,34 @@
+{
+  "name": "ready-guard",
+  "version": "0.0.0",
+  "description": "Simple signal to do composite resource lifecycles",
+  "main": "index.js",
+  "dependencies": {
+    "resolve-reject-promise": "^1.1.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "lunte && prettier --check .",
+    "test": "node test.js",
+    "test:bare": "bare test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holepunchto/ready-guard.git"
+  },
+  "author": "Holepunch Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/ready-guard/issues"
+  },
+  "homepage": "https://github.com/holepunchto/ready-guard",
+  "devDependencies": {
+    "brittle": "^3.19.1",
+    "lunte": "^1.6.0",
+    "prettier": "^3.8.1",
+    "prettier-config-holepunch": "^2.0.0"
+  }
+}
