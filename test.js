@@ -45,6 +45,22 @@ test('readme - example', async (t) => {
   t.is(counter.value, 1, 'ran once')
 })
 
+test('opened - can be set true after destroy()', (t) => {
+  const b = new ReadyGuard()
+
+  t.absent(b.opened, 'initially not opened')
+  t.ok(b.enter(), 'first enter & before destroy returns true')
+  t.execution(b.destroy(), 'destroy() doesnt throw itself')
+  t.execution(b.exit(), 'exit() doesnt throw')
+  t.ok(b.opened, 'flagged as opened')
+  t.ok(b.destroyed, 'flagged as destroyed')
+
+  t.execution(b.exit(), 'exit() can be called again')
+
+  // Intentionally placed last to 1) catch the error 2) show that opened is set before checking ready
+  t.exception(() => b.ready(), 'Ready guard destroyed', 'throws after destroying')
+})
+
 test('destroy', (t) => {
   const b = new ReadyGuard()
 
