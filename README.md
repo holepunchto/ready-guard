@@ -72,7 +72,7 @@ Whether the scope was entered via `guard.enter()`.
 
 #### `guard.opened`
 
-Whether the scope completed via `guard.exit()`.
+Whether the scope completed via `guard.exit()` at least once.
 
 #### `guard.destroyed`
 
